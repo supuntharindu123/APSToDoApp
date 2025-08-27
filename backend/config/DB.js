@@ -1,5 +1,7 @@
+// DB.js: Handles MongoDB connection
 import mongoose from "mongoose";
 
+// Connect to MongoDB
 async function ConnectDB() {
   try {
     const conn = await mongoose.connect(process.env.MONGODB_URI);

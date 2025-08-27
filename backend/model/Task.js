@@ -1,5 +1,7 @@
+// Task.js: Mongoose model for tasks
 import mongoose from "mongoose";
 
+// Define schema for Task
 const taskSchema = new mongoose.Schema(
   {
     title: {
@@ -14,6 +16,7 @@ const taskSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// Create Task model
 const Task = mongoose.model("Task", taskSchema);
 
 export default Task;

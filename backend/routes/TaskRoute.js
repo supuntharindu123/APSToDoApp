@@ -1,3 +1,4 @@
+// TaskRoute.js: Defines API endpoints for tasks
 import express from "express";
 import {
   CreateTask,
@@ -8,9 +9,10 @@ import {
 
 const router = express.Router();
 
-router.post("/tasks", CreateTask);
-router.get("/tasks", GetTasks);
-router.put("/tasks/:id", UpdateTask);
-router.delete("/tasks/:id", DeleteTask);
+// Task CRUD routes
+router.post("/tasks", CreateTask); // POST /tasks
+router.get("/tasks", GetTasks); // GET /tasks
+router.put("/tasks/:id", UpdateTask); // PUT /tasks/:id
+router.delete("/tasks/:id", DeleteTask); // DELETE /tasks/:id
 
 export default router;
